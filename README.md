@@ -44,20 +44,13 @@ Query the webanalysis table to retrieve web analytics or metrics such as best se
 python3 src/analyze_data.py
 ```
 Note: read from the table (default as webanalytics) set in config.ini > consumer > table.
-Run tests: 
-```
-python3 tests/utest.py
-```
-Four tests will be run as follows:
-1. test_create_consumer
-2. test_create_producer
-3. test_db_connection
-4. test_if_exists_config_file
 
 Result: Output to logs/development.log
+
 python3 src/analyze_data.py can return many valuable web analytics and allows the 
 system to fine tune or even dynamically adjust the content or product delivered to
 end user.
+
 Currently there are three queies for the results.
 1. Best seller product by volume
 2. Best seller product by revenue
@@ -67,6 +60,16 @@ Here is a sample output in logs/development.log
 * [2020-08-31 09:03:41] INFO   Best seller by quantity: product 'mug2' sold 14 times
 * [2020-08-31 09:03:56] INFO   Best seller by revenue: product 'tshirt1' sold total price $80.0
 * [2020-08-31 09:04:03] INFO   Most viewed related products: product 'mug6' is viewed as related product for 12 times
+
+Run tests: 
+```
+python3 tests/utest.py
+```
+Four tests will be run as follows:
+1. test_create_consumer
+2. test_create_producer
+3. test_db_connection
+4. test_if_exists_config_file
 
 Credit and thanks to the following authors and sample code:
 1. Getting started with Aiven Kafka
