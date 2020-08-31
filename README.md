@@ -69,15 +69,13 @@ Here is a sample output in logs/development.log
 * [2020-08-31 09:04:03] INFO   Most viewed related products: product 'mug6' is viewed as related product for 12 times
 
 Credit and thanks to the following authors and sample code:
-1. Using Kafka for web application metrics:
-    https://towardsdatascience.com/using-kafka-for-collecting-web-application-metrics-in-your-cloud-data-lake-b97004b2ce31
-2. Getting started with Aiven Kafka
+1. Getting started with Aiven Kafka
     https://aiven.io/blog/getting-started-with-aiven-kafka
-3. Kafka Streams Examples
+2. Kafka Streams Examples
     https://github.com/confluentinc/kafka-streams-examples
-4. Kafka-Python explained in 10 lines of code
+3. Kafka-Python explained in 10 lines of code
     https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1
-5. Aiven Sample code
+4. Aiven Sample code
     https://github.com/viinikv
 
 
