@@ -6,9 +6,9 @@ Simulation data with two csv files:
 1. products.csv: a list of products, their related products, and price
 2. urls.csv: a list of virtual urls such as index, search, product, related_product, cart, and order.  Multiple entries for each url are allowed.  The producer randomly hits the urls such that the more entries of a url, the more chance it will be hit.
 
-Prerequisites: 
-1. Aiven Kafka service or other's
-2. Aiven PostgreSQL service or other's
+Prerequisites: Set up before running the programs
+1. Aiven Kafka service or equivalent
+2. Aiven PostgreSQL service or eqvivalent
 3. Kafka topic(set in config.ini) should be created first
 4. set up ca.pem, service.cert, service.key under /ssl folder to allow access
    to Kafka and PostgreSQL
@@ -24,7 +24,7 @@ Set up and modify the configuration file:
 ${EDITOR} ./config.ini
 ```
 
-Run producer:
+Run producer: Output to logs/development.log
 ```
 python3 src/producer.py
 ```
@@ -32,23 +32,21 @@ Note:
 1. number of records sent each time can be changed in config.ini > kafka > records
 2. producer randomly sleep between sending requests.  Max sleep time is in config.ini > producer > sleep (second)
 
-Run consumer:
+Run consumer: Output to logs/development.log
 ```
 python3 src/consumer.py
 ```
 Note:
 1. data will be written to the table (default webanalytics) set in config.ini > consumer > table.
 
-Query the webanalysis table to retrieve web analytics or metrics such as best seller by revenue or by volume as well as the most viewed related products:
+Run analysis: Output to logs/development.log
 ```
 python3 src/analyze_data.py
 ```
-Note: read from the table (default as webanalytics) set in config.ini > consumer > table.
-
-Result: Output to logs/development.log
-
-python3 src/analyze_data.py can return many valuable web analytics and allows the 
-system to fine tune or even dynamically adjust the content or product delivered to
+* read from the table (default as webanalytics) set in config.ini > consumer > table.
+* Query the webanalysis table to retrieve web analytics or metrics such as best seller by revenue or by volume as well as the most viewed related products.
+* python3 src/analyze_data.py can return many valuable web analytics and allows the 
+system to fine tune or even dynamically adjust the product or content delivered to
 end user.
 
 Currently there are three queies for the results.
@@ -70,6 +68,27 @@ Four tests will be run as follows:
 2. test_create_producer
 3. test_db_connection
 4. test_if_exists_config_file
+
+Sample output of the four tests:
+```
+setUp
+test_create_consumer
+tearDown
+.setUp
+test_create_producer
+tearDown
+.setUp
+test_db_connection
+tearDown
+.setUp
+test_if_exists_config_file
+tearDown
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.871s
+
+OK
+```
 
 Credit and thanks to the following authors and sample code:
 1. Getting started with Aiven Kafka
