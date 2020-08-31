@@ -55,9 +55,9 @@ Currently there are three queies for the results.
 3. Most viewed related product
 
 Here is a sample output in logs/development.log
-* [2020-08-31 09:03:41] INFO   Best seller by quantity: product 'mug2' sold 14 times
-* [2020-08-31 09:03:56] INFO   Best seller by revenue: product 'tshirt1' sold total price $80.0
-* [2020-08-31 09:04:03] INFO   Most viewed related products: product 'mug6' is viewed as related product for 12 times
+* [2020-08-31 09:03:41] INFO   **Best seller by quantity: product 'mug2' sold 14 times**
+* [2020-08-31 09:03:56] INFO   **Best seller by revenue: product 'tshirt1' sold total price $80.0**
+* [2020-08-31 09:04:03] INFO   **Most viewed related products: product 'mug6' is viewed as related product for 12 times**
 
 **Run unit/integration tests**: 
 ```
