@@ -90,10 +90,12 @@ Ran 4 tests in 0.871s
 OK
 ```
 **Next steps**
-1. Push real-time metrics to redis and change the content
-2. Push real-time metrics to influxdb and grafana for real-time tracking
-3. Push real-time metrics to elastic search for business intelligence query/search
-4. Integrate centralizing logging.
+1. Add more web metrics and separate metrics by topics and consumer groups
+2. Push real-time metrics to redis and change the content
+3. Push real-time metrics to influxdb and grafana for real-time tracking
+4. Push real-time metrics to elastic search for business intelligence query/search
+5. Integrate centralized logging.
+6. Add more e2e tests
 
 **Credit and thanks to the following authors and code snippet**:
 1. Getting started with Aiven Kafka
