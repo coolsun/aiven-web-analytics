@@ -10,8 +10,6 @@ import random
 
 current_milli_time = lambda: int(round(time.time() * 1000))
 
-def hello_world:
-	print "Hello World"
 	
 def send_callback(x):
 	pass

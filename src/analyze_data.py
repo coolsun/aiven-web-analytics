@@ -7,7 +7,7 @@ import csv
 
 logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s', 
 	filename='logs/development.log',level=logging.INFO, datefmt='[%Y-%m-%d %H:%M:%S]')
-logging.info('data_dump <<')
+logging.info('analyze_data <<')
 
 with open('data/products.csv', newline='') as csvfile:
 	products_reader = csv.reader(csvfile, delimiter=',', quotechar='|')
