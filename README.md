@@ -54,7 +54,7 @@ Four tests will be run as follows:
 3. test_db_connection
 4. test_if_exists_config_file
 
-Result:
+Result: Output to logs/development.log
 python3 src/analyze_data.py can return many valuable web analytics and allows the 
 system to fine tune or even dynamically adjust the content or product delivered to
 end user.
@@ -64,9 +64,9 @@ Currently there are three queies for the results.
 3. Most viewed related product
 
 Here is a sample output in logs/development.log
-[2020-08-31 09:03:41] INFO   Best seller by quantity: product 'mug2' sold 14 times
-[2020-08-31 09:03:56] INFO   Best seller by revenue: product 'tshirt1' sold total price $80.0
-[2020-08-31 09:04:03] INFO   Most viewed related products: product 'mug6' is viewed as related product for 12 times
+* [2020-08-31 09:03:41] INFO   Best seller by quantity: product 'mug2' sold 14 times
+* [2020-08-31 09:03:56] INFO   Best seller by revenue: product 'tshirt1' sold total price $80.0
+* [2020-08-31 09:04:03] INFO   Most viewed related products: product 'mug6' is viewed as related product for 12 times
 
 Credit and thanks to the following authors and sample code:
 1. Using Kafka for web application metrics:
