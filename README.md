@@ -18,7 +18,7 @@ Install dependencies:
 pip3 install -r requirements.txt
 ```
 
-Modify the configuration file:
+Set up and modify the configuration file:
 ```
 ./config.ini
 ${EDITOR} ./config.ini
@@ -37,9 +37,9 @@ Run consumer:
 python3 src/consumer.py
 ```
 Note:
-1. data will be written to the table (default as webanalytics) set in config.ini > consumer > table.
+1. data will be written to the table (default webanalytics) set in config.ini > consumer > table.
 
-Query the webanalysis table to retrieve web analytics or metrics such as best seller by total price or by volume as well as the most viewed related products:
+Query the webanalysis table to retrieve web analytics or metrics such as best seller by revenue or by volume as well as the most viewed related products:
 ```
 python3 src/analyze_data.py
 ```

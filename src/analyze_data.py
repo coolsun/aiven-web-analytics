@@ -63,9 +63,9 @@ else:
 cur.execute("SELECT product_id, sum(price) from webanalytics where urls = 'order' group by product_id order by sum(price) desc limit 1")
 x = cur.fetchone()
 if x is None:
-	logging.info("No best seller by total price")
+	logging.info("No best seller by revenue")
 else:
-	logging.info("Best seller by total price: product '{}' sold total price ${}".format(products[int(x[0])-1][1], x[1]))
+	logging.info("Best seller by revenue: product '{}' sold total price ${}".format(products[int(x[0])-1][1], x[1]))
 
 cur.execute("SELECT count(*), product_id from webanalytics where urls = 'related_product' group by product_id order by count(*) desc limit 1")
 x = cur.fetchone()
