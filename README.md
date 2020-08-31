@@ -10,8 +10,8 @@ Demonstrates Ecommerce web analytics collection and analysis via real-time strea
 1. Aiven Kafka service or equivalent
 2. Aiven PostgreSQL service or eqvivalent
 3. Kafka topic(set in config.ini) should be created first
-4. set up ca.pem, service.cert, service.key under /ssl folder to allow access
-   to Kafka and PostgreSQL
+4. Set up **ca.pem, service.cert, service.key** under **/ssl folder** to allow access
+   to Kafka and PostgreSQL services in Aiven.
 
 **Install dependencies**:
 ```
