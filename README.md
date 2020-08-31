@@ -104,7 +104,7 @@ OK
     https://github.com/confluentinc/kafka-streams-examples
 3. Kafka-Python explained in 10 lines of code
     https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1
-4. Aiven Sample code
+4. Kafka code snippets
     https://github.com/viinikv
 
 
