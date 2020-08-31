@@ -90,7 +90,7 @@ Ran 4 tests in 0.871s
 OK
 ```
 
-Credit and thanks to the following authors and sample code:
+**Credit and thanks to the following authors and code snippet**:
 1. Getting started with Aiven Kafka
     https://aiven.io/blog/getting-started-with-aiven-kafka
 2. Kafka Streams Examples
