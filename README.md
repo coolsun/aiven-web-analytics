@@ -1,4 +1,4 @@
-# aiven-web-analytics-kafka-python-postgreSQL
+# aiven-web-analytics
 
 Demonstrates Ecommerce web analytics collection and analysis via real-time streaming service with Aiven's powerful and ease-of-use Kafka and PostgresQL services.
 
@@ -29,8 +29,8 @@ Run producer:
 python3 src/producer.py
 ```
 Note: 
-1. number of records sent each time can be changed in config.ini > Kafka > records
-2. producer randomly sleep between sending requests.  Max sleep time is in config.ini > Producer > Sleep (second)
+1. number of records sent each time can be changed in config.ini > kafka > records
+2. producer randomly sleep between sending requests.  Max sleep time is in config.ini > producer > sleep (second)
 
 Run consumer:
 ```
